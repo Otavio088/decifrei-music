@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+header {
+    background-color: #12294B;
+    color: #D2D7DE;
+    font-family: 'Righteous', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 350px;
+    border-bottom: 2px solid black;
+}
+
+header a {
+    cursor: pointer;
+    position: relative;
+}
+
+header .opcoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 85px;
+}
+
+header .opcoes a:after {
+    content: "";
+    position: absolute;
+    background-color: #D2D7DE;
+    height: 3px;
+    width: 0px;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s;
+}
+
+header .opcoes a:hover {
+    color: #fff;
+}
+
+header .opcoes a:hover:after {
+    width: 100%;
+}
