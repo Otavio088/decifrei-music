@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DeCifrei - Escola de Música</title>
+        <link rel="icon" href="img/logo-DeCifrei.png">
         <link rel="stylesheet" href="css/reset.css" type="text/css">
         <link rel="stylesheet" href="css/header-style.css" type="text/css">
+        <link rel="stylesheet" href="css/home-style.css" type="text/css">
     </head>
+
     <body>
         <header>
             <div>
-                <a><img src="img/logo-DeCifrei.png" alt="Logo DeCifrei" width="60px"></a>
+                <a href="index.html"><img src="img/logo-DeCifrei.png" alt="Logo DeCifrei" width="60px"></a>
             </div>
-            <nav class="opcoes">
-                <a>Home</a>
-                <a>Cursos</a>
-                <a>Aulas Presenciais</a>
-                <a>Sobre nós</a>
-                <a>Loja</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="html/cursos.html">Cursos</a>
+                <a href="https://forms.gle/tMkNdSbadG54h25i8">Aulas Presenciais</a>
+                <a href="html/sobre.html">Sobre nós</a>
+                <a href="html/loja.html">Loja</a>
             </nav>
         </header>
+
         <main>
-            <div class="inicio">
+            
+            <div class="home">
                 <div class="titulo">
                     <h1>VOCÊ SEMPRE SONHOU EM DOMINAR UM INSTRUMENTO<br>
                         MUSICAL? É A SUA CHANCE DE TRANSFORMAR ESSE<br>
@@ -29,35 +35,176 @@
                     </h1>
                 </div>
                 <div class="beneficios">
-                    <div class="coluna">
-                        <div class="linha">
-                            <img src="img/nota-musical.png" alt="Nota Musical">
+                    <div class="linha">
+                        <div>
+                            <img src="img/nota-musical.png" alt="Nota Musical" width="30px">
                             <h2>Professores Renomados</h2>
                             <p>Aprenda com os<br>melhores, que vão<br>guiá-lo em uma<br>jornada musical<br>incrível! Cada<br>Professor foi<br>escolhido a dedo<br>para o seu<br>aprendizado!</p>
                         </div>
-                        <div class="linha">
-                            <img src="img/nota-musical.png" alt="Nota Musical">
+                        <div>
+                            <img src="img/nota-musical.png" alt="Nota Musical" width="30px">
                             <h2>Cursos Personalizados</h2>
                             <p>Sendo iniciante ou<br>avançado, nós<br>temos o curso<br>perfeito para você<br>decolar na música!<br>Aproveite agora os<br>benefícios!</p>
                         </div>
                     </div>
-                    <div class="coluna">
-                        <div class="linha">
-                            <img src="img/nota-musical.png" alt="Nota Musical">
+                    <div class="linha">
+                        <div style="padding-left: 15px;">
+                            <img src="img/nota-musical.png" alt="Nota Musical" width="30px">
                             <h2>Estudios Equipados</h2>
                             <p>Pratique em<br>ambientes<br>modernos e<br>totalmente<br>equipados para<br>potencializar seu<br>aprendizado ao<br>mais alto nível!</p>
                         </div>
-                        <div class="linha">
-                            <img src="img/nota-musical.png" alt="Nota Musical">
+                        <div>
+                            <img src="img/nota-musical.png" alt="Nota Musical" width="30px">
                             <h2>Concursos e Apresentações</h2>
                             <p>Participe de<br>eventos<br>exclusivos e<br>mostre os seus<br>talentos ao<br>mundo inteiro!</p>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <button>QUERO PARTICIPAR</button>
+                <div class="botao">
+                    <a href="https://forms.gle/tMkNdSbadG54h25i8"><button>QUERO PARTICIPAR</button></a>
                 </div>
             </div>
+
+            <div class="aulas-oferecidas">
+                <div class="titulo">
+                    <h1>VOCÊ PODE APRENDER TUDO ISSO</h1>
+                </div>
+                <div class="opcoes">
+                    <div class="linha">
+                        <div class="opcao">
+                            <div>
+                                <img src="img/violao.png" alt="imagem de violão">
+                                <h1>VIOLÃO</h1>
+                            </div>
+                            <div>
+                                <p>instrumento de cordas,<br>
+                                    com uma caixa<br>
+                                    geralmente feita de<br>
+                                    madeira, que gera uma<br>
+                                    acústica facilitando a<br>
+                                    propagação do som.</p>
+                            </div>
+                        </div>
+                        <div class="opcao">
+                            <div>
+                                <img src="img/guitarra.png" alt="imagem de guitarra">
+                                <h1>GUITARRA</h1>
+                            </div>
+                            <div>
+                                <p>instrumento de cordas, o<br>
+                                    som é produzido pela<br>
+                                    vibração das cordas<br>
+                                    como na guitarra<br>
+                                    acústica, porém é<br>
+                                    transformado em sinal<br>
+                                    elétrico devido a ação de<br>
+                                    captadores magnéticos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="opcao">
+                            <div>
+                                <img src="img/baixo.png" alt="imagem de baixo">
+                                <h1>BAIXO</h1>
+                            </div>
+                            <div>
+                                <p>foram desenvolvidos no<br>
+                                    início do século XX, uma<br>
+                                    resposta à necessidade<br>
+                                    de amplificar o som do<br>
+                                    contrabaixo acústico em<br>
+                                    contextos musicais cada<br>
+                                    vez mais amplificados e<br>
+                                    de grande volume.</p>
+                            </div>
+                        </div>
+                        <div class="opcao">
+                            <div>
+                                <img src="img/ukelele.png" alt="imagem de ukulele">
+                                <h1>UKULELE</h1>
+                            </div>
+                            <div>
+                                <p>instrumento de cordas<br>
+                                    associado à música<br>
+                                    havaiana. Ele é,<br>
+                                    normalmente, feito em<br>
+                                    madeira, tem quatro<br>
+                                    cordas que produzem<br>
+                                    sons suaves e<br>
+                                    melodiosos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="opcao">
+                            <div>
+                                <img src="img/bateria.png" alt="imagem de bateria">
+                                <h1>BATERIA</h1>
+                            </div>
+                            <div>
+                                <p>é um conjunto de<br>
+                                    tambores de diversos<br>
+                                    tamanhos e timbres e de<br>
+                                    pratos colocados de<br>
+                                    forma organizada para<br>
+                                    serem percutidos por um<br>
+                                    único músico, o baterista.</p>
+                            </div>
+                        </div>
+                        <div class="opcao">
+                            <div>
+                                <img src="img/teclado.png" alt="imagem de teclado">
+                                <h1>TECLADO</h1>
+                            </div>
+                            <div>
+                                <p>é composto por um<br>
+                                    conjunto de teclas<br>
+                                    adjacentes pretas e<br>
+                                    brancas, que quando<br>
+                                    pressionadas<br>
+                                    produzem os sons. O<br>
+                                    músico que o executa<br>
+                                    chama-se tecladista.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="opcao">
+                            <div>
+                                <img src="img/canto.png" alt="imagem de microfone">
+                                <h1>CANTO</h1>
+                            </div>
+                            <div>
+                                <p>é o ato de produzir<br>
+                                    sons musicais<br>
+                                    utilizando a voz,<br>
+                                    variando a altura de<br>
+                                    acordo com a melodia<br>
+                                    e o ritmo.</p>
+                            </div>
+                        </div>
+                        <div class="opcao">
+                            <div>
+                                <img src="img/partitura.png" alt="imagem de partitura">
+                                <h1>TEORIA</h1>
+                            </div>
+                            <div>
+                                <p>estudo dos fenômenos<br>
+                                    e das estruturas<br>
+                                    existentes na música<br>
+                                    de modo geral, além<br>
+                                    de ser responsável por<br>
+                                    criar uma<br>
+                                    comunicação padrão<br>
+                                    para os músicos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
         </main>
     </body>
+
 </html>

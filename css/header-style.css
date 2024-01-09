@@ -2,7 +2,6 @@
 
 header {
     background-color: #12294B;
-    color: #D2D7DE;
     font-family: 'Righteous', sans-serif;
     display: flex;
     flex-direction: row;
@@ -13,21 +12,22 @@ header {
 }
 
 header a {
+    color: #D2D7DE;
     cursor: pointer;
     position: relative;
 }
 
-header .opcoes {
+header nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 85px;
 }
 
-header .opcoes a:after {
+header nav a:after {
     content: "";
     position: absolute;
-    background-color: #D2D7DE;
+    background-color: #fff;
     height: 3px;
     width: 0px;
     left: 0;
@@ -35,10 +35,10 @@ header .opcoes a:after {
     transition: 0.4s;
 }
 
-header .opcoes a:hover {
+header nav a:hover {
     color: #fff;
 }
 
-header .opcoes a:hover:after {
+header nav a:hover:after {
     width: 100%;
 }
