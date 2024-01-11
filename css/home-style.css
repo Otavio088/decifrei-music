@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .home {
+    height: 100vh;
     background-color: #D2D7DE;
     font-family: 'Roboto', sans-serif;
     color: #12294B;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .home .titulo {
@@ -15,34 +15,37 @@
     font-size: 25px;
     font-weight: bold;
     text-align: center;
-    padding: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
-.home .linha {
+.home .beneficios {
     display: flex;
     flex-direction: row;
-    align-items: start;
-    gap: 300px;
-    padding: 10px;
+    gap: 80px;
+    padding: 20px;
 }
 
-.home .linha div {
+.home .beneficios div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 8px;
 }
 
-.home .linha div h2 {
+.home .beneficios div h2 {
     font-size: 18px;
     font-weight: bold;
 }
 
-.home .linha div p {
+.home .beneficios div p {
     font-size: 16px;
 }
 
 .home .botao {
-    padding: 45px;
+    margin-top: 15px;
+    margin-right: 100%;
+    margin-left: 100%;
 }
 
 .home .botao button {
@@ -52,11 +55,11 @@
     font-size: 16px;
     font-weight: bold;
     border: none;
-    box-shadow: 4px 4px 1px 0px #000;
+    box-shadow: 4px 4px 1px #000;
     width: 250px;
     height: 50px;
     cursor: pointer;
-    transition: transform 200ms ease-in-out;
+    transition: transform 0ms ease-in-out;
 }
 
 .home .botao button:hover {

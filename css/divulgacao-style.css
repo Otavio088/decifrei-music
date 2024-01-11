@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.divulgacao {
+    background-color: #D2D7DE;
+    color: #12294B;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divulgacao .titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.divulgacao .video {
+    padding-right: 42vh;
+    padding-left: 41vh;
+    background-color: #000;
+}
+
+.divulgacao .canal-youtube h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+ .divulgacao .canal-youtube div {
+    position: relative;
+ }
+
+ .divulgacao .canal-youtube div #setaD {
+    position: absolute;
+    top: -120px;
+    left: -200px;
+}
+
+.divulgacao .canal-youtube div #setaE {
+    position: absolute;
+    left: 350px;
+    top: 50px;
+}
+
+.canal-youtube div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canal-youtube div div img{
+    cursor: pointer;
+    transition: transform 150ms ease-in-out;
+}
+
+.canal-youtube div div img:hover {
+    transform: scale(1.02);
+}
+
+.canal-youtube div div h3 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 20px;
+}
+
+.canal-youtube h2 {
+    padding-top: 50px;
+}

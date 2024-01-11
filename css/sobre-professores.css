@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.sobre-professores {
+    background-color: #12294B;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.sobre-professores .titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #D2D7DE;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.sobre-professores .carrossel {
+    box-shadow: 6px 6px 1px #000;
+    overflow: hidden;
+    height: 600px;
+    width: 600px;
+}
+
+.carrossel .container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.carrossel .container img {
+    object-fit: cover;
+    height: 600px;
+    width: 600px;
+}
+
+.sobre-professores .botoes {
+    position: relative;
+}
+
+.botoes .seta {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    color: #D2D7DE;
+    box-shadow: 4px 4px 1px #000;
+    border: none;
+    cursor: pointer;
+}
+
+.botoes .seta.-left {
+    position: absolute;
+    top: -50vh;
+    left: -56vh;
+}
+
+.botoes .seta.-right {
+    position: absolute;
+    top: -50vh;
+    left: 48vh;
+}
+
+.botoes .seta:before {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    border: 15px solid transparent;
+    border-left: 20px solid white;
+    transform: translateX(8px);
+}
+
+.botoes .seta.-left:before {
+    transform: rotate(180deg) translateX(8px);
+}
+
+.sobre-professores .botao {
+    margin-top: 100px;
+    margin-right: 100%;
+    margin-left: 100%;
+}
+
+.botao button {
+    background-color: #D2D7DE;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 4px 4px 1px #000;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0ms ease-in-out;
+}
+
+.botao button:hover {
+    transform: scale(1.01);
+}

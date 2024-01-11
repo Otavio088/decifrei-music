@@ -6,8 +6,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 350px;
+    justify-content: space-around;
     border-bottom: 2px solid black;
 }
 
