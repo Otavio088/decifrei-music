@@ -45,3 +45,7 @@ table {
 * {
 	box-sizing: border-box;
 }
+
+body {
+	background-color: #D2D7DE;
+}

@@ -3,6 +3,7 @@
 header {
     background-color: #12294B;
     font-family: 'Righteous', sans-serif;
+    font-size: 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,20 +11,24 @@ header {
     border-bottom: 2px solid black;
 }
 
-header a {
-    color: #D2D7DE;
-    cursor: pointer;
-    position: relative;
+nav #btn-mobile {
+    display: none;
 }
 
-header nav {
+nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 85px;
 }
 
-header nav a:after {
+li {
+    color: #D2D7DE;
+    cursor: pointer;
+    position: relative;
+}
+
+li:after {
     content: "";
     position: absolute;
     background-color: #fff;
@@ -34,10 +39,98 @@ header nav a:after {
     transition: 0.4s;
 }
 
-header nav a:hover {
+li:hover {
     color: #fff;
 }
 
-header nav a:hover:after {
+li:hover:after {
     width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }   
+
+    img {
+        display: none;
+    }
+
+    nav #btn-mobile {
+        display: flex;
+        padding: 25px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburger {
+        border-top: 6px solid;
+        width: 50px;
+    }
+
+    #hamburger:after, #hamburger:before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 6px;
+        background-color: #000;
+        margin-top: 10px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger:before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger:after {
+        transform: rotate(-135deg);
+        top: -15px;
+    }
+
+    nav ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 90px;
+        padding-top: 25px;
+        right: 0px;
+        background-color: #12294B;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active ul {
+        height: calc(100vh - 70px);
+        visibility: visible;
+    }
+
+    ul li {
+        padding: 15px;
+        border-bottom: 0.1px solid #1b1a1a65;
+        
+    }
+
+    li:after {
+        background-color: transparent;
+    }
+
+    li a:hover {
+        color: #D2D7DE;
+    }
+
+    li:hover {
+        background-color: #192d4b;
+    }
 }

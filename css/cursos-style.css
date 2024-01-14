@@ -1,55 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.home {
-    height: 100vh;
+main {
     font-family: 'Roboto', sans-serif;
-    color: #12294B;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
-.home .titulo {
-    text-shadow: 1px 2px 2px #12294B;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
+main .curso {
+    background-color: #12294B;
+    color: #D2D7DE;
+    box-shadow: 4px 4px 1px #000;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    margin-bottom: 80px;
 }
 
-.home .beneficios {
+.curso .top {
     display: flex;
     flex-direction: row;
-    gap: 80px;
-    padding: 20px;
-}
-
-.home .beneficios div {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 20px;
 }
 
-.home .beneficios div h2 {
-    font-size: 18px;
+.top .titulo h1 {
+    font-size: 25px;
     font-weight: bold;
 }
 
-.home .beneficios div p {
-    font-size: 16px;
+.curso .bott {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }
 
-.home .botao {
-    margin-top: 15px;
+.bott p {
+    font-size: 22px;
+}
+
+.bott .button {
     margin-right: 100%;
     margin-left: 100%;
 }
 
-.home .botao button {
-    background-color: #12294B;
-    color: #D2D7DE;
+.button button {
+    background-color: #FDE300;
+    color: #000;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -61,10 +63,6 @@
     transition: transform 100ms ease-in-out;
 }
 
-.home .botao button:hover {
+.button button:hover {
     transform: scale(1.01);
-}
-
-@media screen and (max-width: 700px) {
-    
 }
