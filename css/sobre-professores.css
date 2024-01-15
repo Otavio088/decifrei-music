@@ -14,6 +14,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
     color: #D2D7DE;
     margin-top: 80px;
     margin-bottom: 120px;
@@ -81,8 +82,6 @@
 
 .sobre-professores .botao {
     margin-top: 100px;
-    margin-right: 100%;
-    margin-left: 100%;
 }
 
 .botao button {
@@ -101,4 +100,36 @@
 
 .botao button:hover {
     transform: scale(1.01);
+}
+
+@media screen and (max-width: 700px) {
+    .sobre-professores .titulo {
+        font-size: 20px;
+        text-shadow: 0.5px 0.5px 1px #000;
+    }
+
+    .sobre-professores .carrossel {
+        box-shadow: 6px 6px 1px #000;
+        overflow: hidden;
+        height: 320px;
+        width: 320px;
+    }
+
+    .carrossel .container img {
+        object-fit: cover;
+        height: 320px;
+        width: 320px;
+    }
+
+    .botoes .seta.-left {
+        top: 0vh;
+        left: -15vh;
+    }
+    
+    .botoes .seta.-right {
+        position: inherit;
+        top:  0vh;
+        left: 15vh;
+    }
+
 }

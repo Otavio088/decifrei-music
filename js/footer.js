@@ -11,18 +11,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     footer.innerHTML = 
       `<div class='informacoes'>
-        <div>
+        <div class='atendimento'>
           <h1>ATENDIMENTO</h1>
           <p>Horario de atendimento: 08:00 às 18:00 de<br>
             segunda à sexta-feira, horário de Brasília.</p>
         </div>
-        <div>
+        <div class='redes'>
           <h1>REDES SOCIAIS</h1>
           <div>
-            <a href=''><img src='img/icones/icone-facebook.png' alt='imagem facebook' width='30px'></a>
-            <a href=''><img src='img/icones/icone-instagram.png' alt='imagem instagram' width='30px'></a>
-            <a href=''><img src='img/icones/icone-youtube.png' alt='imagem youtube' width='30px'></a>
-            <a href=''><img src='img/icones/icone-whatsapp.png' alt='imagem whatsapp' width='30px'></a>
+            <a href='https://www.facebook.com/decifreiviolao/' target='_blank'><img src='img/icones/icone-facebook.png' alt='imagem facebook' width='30px'></a>
+            <a href='https://www.instagram.com/decifreimusic/' target='_blank'><img src='img/icones/icone-instagram.png' alt='imagem instagram'></a>
+            <a href='https://www.youtube.com/@DeCifrei' target='_blank'><img src='img/icones/icone-youtube.png' alt='imagem youtube' width='30px'></a>
+            <a href=''><img src='img/icones/icone-whatsapp.png' alt='imagem whatsapp'></a>
           </div>
         </div>
       </div>

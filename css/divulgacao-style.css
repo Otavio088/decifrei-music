@@ -14,11 +14,10 @@
     font-weight: bold;
     margin-top: 80px;
     margin-bottom: 120px;
+    text-shadow: 1px 2px 2px #000;
 }
 
 .divulgacao .video {
-    padding-right: 42vh;
-    padding-left: 41vh;
     background-color: #000;
 }
 
@@ -69,3 +68,29 @@
 .canal-youtube h2 {
     padding-top: 50px;
 }
+
+@media screen and (max-width: 700px) {
+    .divulgacao .titulo {
+        font-size: 20px;
+        text-shadow: 1px 1px 1px #000;
+    }
+
+    .divulgacao .video {
+        background-color: transparent;
+    }
+
+    .divulgacao .video iframe {
+        height: 25vh;
+        width: 40vh;
+    }
+
+    .divulgacao .canal-youtube h2 {
+        font-size: 18px;
+        text-shadow: 0.5px 0.5px 1px #000;
+    }
+
+    #setaD, #setaE {
+        display: none;
+    }
+
+} 

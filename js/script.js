@@ -10,7 +10,14 @@ function carrossel() {
         idx = 0;
     }
 
-    imgs.style.transform = `translateX(${-idx * 600}px)`;
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth <= 700) {
+        imgs.style.transform = `translateX(${-idx * 320}px)`;
+    } else {
+        imgs.style.transform = `translateX(${-idx * 600}px)`;
+    }
+
 }
 
 setInterval(carrossel, 10000);
@@ -22,5 +29,11 @@ function carrosselInverso() {
         idx = 4;
     }
 
-    imgs.style.transform = `translateX(${-idx * 600}px)`;
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth <= 700) {
+        imgs.style.transform = `translateX(${-idx * 320}px)`;
+    } else {
+        imgs.style.transform = `translateX(${-idx * 600}px)`;
+    }
 }

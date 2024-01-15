@@ -4,7 +4,6 @@ footer {
     background-color: #181818;
     color: #D2D7DE;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -13,13 +12,11 @@ footer {
 }
 
 footer .informacoes {
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.informacoes {
-    font-size: 20px;
+    gap: 150px;
 }
 
 .informacoes img {
@@ -27,5 +24,39 @@ footer .informacoes {
 }
 
 footer .direitos {
+    font-size: 18px;
     text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    footer {
+        height: 40vh;
+        padding: 25px;
+    }
+    
+    footer .informacoes {
+        font-size: 17px;
+    }
+    
+    .informacoes img {
+        cursor: pointer;
+    }
+
+    .informacoes .redes h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .informacoes .redes div {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-top: 5px;
+    }
+    
+    footer .direitos {
+        font-size: 13px;
+        text-align: center;
+    }
 }

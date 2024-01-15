@@ -66,3 +66,23 @@ main .curso {
 .button button:hover {
     transform: scale(1.01);
 }
+
+@media screen and (max-width: 700px) {
+    main .curso {
+        width: 85%;
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+
+    .top .titulo h1 {
+        font-size: 20px;
+    }
+
+    .top .image img {
+        width: 120px;
+    }
+
+    .bott p {
+        font-size: 18px;
+    }
+}
