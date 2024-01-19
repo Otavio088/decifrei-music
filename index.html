@@ -6,13 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DeCifrei - Escola de Música</title>
         <link rel="icon" href="img/logos/logo-DeCifrei.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Copse&family=Press+Start+2P&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="css/reset.css" type="text/css">
-        <!-- <link rel="stylesheet" href="css/header-style.css" type="text/css"> -->
         <link rel="stylesheet" href="css/home-style.css" type="text/css">
         <link rel="stylesheet" href="css/aulas-oferecidas-style.css" type="text/css">
         <link rel="stylesheet" href="css/divulgacao-style.css" type="text/css">
         <link rel="stylesheet" href="css/sobre-professores.css" type="text/css">
-        <!-- <link rel="stylesheet" href="css/footer-style.css" type="text/css"> -->
+    
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     </head>
     
     <body> 
@@ -20,7 +25,7 @@
         <script src="js/header.js"></script>
 
         <main> 
-            <div class="home">
+            <div class="home" data-aos="fade-up">
                 <div class="titulo">
                     <h1>VOCÊ SEMPRE SONHOU EM DOMINAR UM INSTRUMENTO<br>
                         MUSICAL? É A SUA CHANCE DE TRANSFORMAR ESSE<br>
@@ -49,12 +54,12 @@
                         <p>Participe de eventos<br>exclusivos e mostre<br>os seus talentos ao<br>mundo inteiro!</p>
                     </div>
                 </div>
-                <div class="botao">
+                <div class="botao" >
                     <a href="https://forms.gle/tMkNdSbadG54h25i8"><button>QUERO PARTICIPAR</button></a>
                 </div>
             </div>
 
-            <div class="aulas-oferecidas">
+            <div class="aulas-oferecidas" data-aos="fade-up">
                 <div class="titulo">
                     <h1>VOCÊ PODE APRENDER TUDO ISSO</h1>
                 </div>
@@ -193,7 +198,7 @@
                 </div>
             </div>
         
-            <div class="divulgacao">
+            <div class="divulgacao" data-aos="fade-up">
                 <div class="titulo">
                     <h1>O QUE É A MÚSICA PARA VOCÊ?</h1>
                 </div>
@@ -214,7 +219,7 @@
                 </div>
             </div>
 
-            <div class="sobre-professores" id="sobre">
+            <div class="sobre-professores" id="sobre" data-aos="fade-up">
                 <div class="titulo">
                     <h1>CONHEÇA UM POUCO DA GENTE</h1>
                 </div>
@@ -240,6 +245,8 @@
         <script src="js/footer.js"></script>
 
         <script src="js/script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </body>
 
 </html> 

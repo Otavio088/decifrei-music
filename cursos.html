@@ -5,8 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DeCifrei - Escola de Música</title>
         <link rel="icon" href="img/logos/logo-DeCifrei.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Copse&family=Press+Start+2P&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="css/reset.css" type="text/css">
         <link rel="stylesheet" href="css/cursos-style.css" type="text/css">
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     </head>
 
     <body>
@@ -14,7 +21,7 @@
         <script src="js/header.js"></script>
           
         <main>
-            <div class="curso">
+            <div class="curso" data-aos="fade-up">
                 <div class="top">
                     <div class="image">
                         <img src="img/logos/logo-MdP.png" alt="imagem mestres das palhetas">
@@ -51,10 +58,10 @@
                 </div>
             </div>
 
-            <div class="curso">
+            <div class="curso" data-aos="fade-up">
                 <div class="top">
                     <div class="image">
-                        <img src="img/logos/logo-pf.png" alt="imagem penta facil">
+                        <img src="img/logos/logo-MdP.png" alt="imagem penta facil">
                     </div>
                     <div class="titulo">
                         <h1>PENTA FÁCIL (eBOOK)</h1>
@@ -90,5 +97,7 @@
 
         <script src="js/footer.js"></script>
 
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>AOS.init();</script>        
     </body>
 </html>
