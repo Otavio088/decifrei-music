@@ -72,8 +72,8 @@
         flex-direction: column;
         margin: 0px;
         padding: 0px;
-        margin-left: 32px;
-        margin-right: 32px;
+        margin-left: 34px;
+        margin-right: 34px;
     }
 
     .aulas-oferecidas .opcoes .linha2 {
@@ -81,12 +81,17 @@
         flex-direction: column;
         margin: 0px;
         padding: 0px;
-        margin-left: 32px;
-        margin-right: 32px;
+        margin-left: 34px;
+        margin-right: 34px;
     }
  
     .opcao {
         margin-bottom: 40px;
+        transition: none;
+    }
+
+    .opcao:hover {
+        transform: none;
     }
 
 }

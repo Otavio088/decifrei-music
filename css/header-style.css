@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+main {
+	margin-top: 80px;
+}
+
 header {
     background-color: #12294B;
     font-family: 'Righteous', sans-serif;
@@ -9,6 +13,11 @@ header {
     align-items: center;
     justify-content: space-around;
     border-bottom: 2px solid black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 nav #btn-mobile {
@@ -48,10 +57,16 @@ li:hover:after {
 }
 
 @media screen and (max-width: 700px) {
+
+    main {
+        margin-top: 0px;
+    }
+
     header {
         flex-direction: column;
         padding-top: 20px;
         padding-bottom: 10px;
+        position: inherit;
     }   
 
     header img {

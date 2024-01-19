@@ -18,7 +18,7 @@ main .curso {
     flex-direction: column;
     gap: 40px;
     padding: 40px;
-    margin-bottom: 80px;
+    margin-top: 100px;
 }
 
 .curso .top {
